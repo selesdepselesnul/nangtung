@@ -1,0 +1,14 @@
+version: "3"
+services:
+  node:
+    build:
+      context: .
+      dockerfile: ./dev.dockerfile
+    user: "node"
+    working_dir: /home/node/app
+    restart: always
+    volumes:
+      - ./:/home/node/app
+    command:
+      node main.js
+  
