@@ -10,5 +10,5 @@ services:
     volumes:
       - ./:/home/node/app
     command:
-      node main.js
+      ./run.sh
   
